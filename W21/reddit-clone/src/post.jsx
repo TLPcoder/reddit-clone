@@ -26,10 +26,8 @@ class Post extends Component {
         var key = 0;
         var allPost = post.map(function(element){
             key++;
-            // return <p key = {key}>{element.data.author}</p>
             return <CreatePost key = {key} data={element.data}/>
         })
-        //console.log(allPost)
         if(this.state.items[0].data.author === "Loading..."){
             return (<h1>{this.state.items[0].data.author}</h1>)
         }
