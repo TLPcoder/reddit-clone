@@ -37,20 +37,20 @@ class Header extends Component {
         return (
             <div>
                 <ul>
-                    <li>
-                        <button onClick={this.hotPost}>Hot</button>
+                    <li className = 'headerButtons'>
+                        <a onClick={this.hotPost}>Hot</a>
                     </li>
-                    <li>
-                        <button onClick={this.newPost}>New</button>
+                    <li className = 'headerButtons'>
+                        <a onClick={this.newPost}>New</a>
                     </li>
-                    <li>
-                        <button onClick={this.risingPost}>Rising</button>
+                    <li className = 'headerButtons'>
+                        <a onClick={this.risingPost}>Rising</a>
                     </li>
-                    <li>
-                        <button onClick={this.controversialPost}>Controversial</button>
+                    <li className = 'headerButtons'>
+                        <a onClick={this.controversialPost}>Controversial</a>
                     </li>
-                    <li>
-                        <button onClick={this.topPost}>Top</button>
+                    <li className = 'headerButtons'>
+                        <a onClick={this.topPost}>Top</a>
                     </li>
                 </ul>
                 <Post key = {key} url={this.state.url}/>

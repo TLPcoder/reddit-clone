@@ -12,8 +12,6 @@ class Scoring extends Component {
         this.handleClickDown = this.handleClickDown.bind(this);
     }
     handleClickUp(event) {
-        console.log(this.state.likes);
-        console.log("max", this.max)
         if(this.state.likes < this.max){
             this.setState({
                 likes: this.state.likes + 1
@@ -21,8 +19,6 @@ class Scoring extends Component {
         }
     }
     handleClickDown(event) {
-        console.log(this.state.likes);
-        console.log("min", this.min)
         if(this.state.likes > this.min){
             this.setState({
                 likes: this.state.likes - 1
@@ -33,8 +29,8 @@ class Scoring extends Component {
         var redditData = this.state.likes
         return (
             <div>
-                <ul>
-                    <li className="arrow">
+                <ul className = "scoring-system">
+                    <li className="arrow moveLeft">
                         <button onClick={this.handleClickUp}><img src="../images/up.png" alt="" height="30px" width="30px"/></button>
                     </li>
                     <li className="likes">{redditData}</li>

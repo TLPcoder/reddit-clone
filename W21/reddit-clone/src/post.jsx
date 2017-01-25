@@ -32,7 +32,7 @@ class Post extends Component {
             return (<h1>{this.state.items[0].data.author}</h1>)
         }
         return (
-            <div>{allPost}</div>
+            <div id = "all-post">{allPost}</div>
         )
     }
 }
