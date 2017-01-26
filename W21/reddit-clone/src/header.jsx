@@ -36,24 +36,31 @@ class Header extends Component {
     render() {
         return (
             <div>
-                <ul>
-                    <li className = 'headerButtons'>
-                        <a onClick={this.hotPost}>Hot</a>
-                    </li>
-                    <li className = 'headerButtons'>
-                        <a onClick={this.newPost}>New</a>
-                    </li>
-                    <li className = 'headerButtons'>
-                        <a onClick={this.risingPost}>Rising</a>
-                    </li>
-                    <li className = 'headerButtons'>
-                        <a onClick={this.controversialPost}>Controversial</a>
-                    </li>
-                    <li className = 'headerButtons'>
-                        <a onClick={this.topPost}>Top</a>
-                    </li>
-                </ul>
-                <Post key = {key} url={this.state.url}/>
+                <nav className = 'header  transparent'>
+                    <div className="nav-wrapper">
+                        <a href="#" className="brand-logo">Treddit</a>
+                        <ul className="right hide-on-med-and-down">
+                            <li>
+                                <a onClick={this.hotPost}>Hot</a>
+                            </li>
+                            <li>
+                                <a onClick={this.newPost}>New</a>
+                            </li>
+                            <li>
+                                <a onClick={this.risingPost}>Rising</a>
+                            </li>
+                            <li>
+                                <a onClick={this.controversialPost}>Controversial</a>
+                            </li>
+                            <li>
+                                <a onClick={this.topPost}>Top</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div id='postContainer'>
+                    <Post key={key} url={this.state.url}/>
+                </div>
             </div>
         )
     }

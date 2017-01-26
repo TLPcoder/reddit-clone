@@ -1,13 +1,33 @@
-#container {
+body{
+    background-image: url('../images/background.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#postContainer {
     margin-left: 10%;
     margin-right: 10%;
+}
+.likesScore {
+    margin: 20px;
+    font-size: 1.5em;
+}
+/*.header {
+    z-index: 10;
+    margin-bottom: 50px;
+}*/
+.text{
+    color:black;
 }
 
 ul {
     list-style-type: none;
 }
 
-.headerButtons {
+.post{
+
+}
+/*.headerButtons {
     color: white;
     background-color: black;
     color: white;
@@ -16,25 +36,19 @@ ul {
     margin-bottom: 50px;
     padding: 20px 40px;
     text-decoration: none;
-}
+}*/
 
 li {
     display: inline;
-    margin-left: 1%;
-    margin-right: 1%;
 }
 
-.arrow {
+/*.arrow {
     margin: 0 auto;
 }
 
-.likes {
-    height: 0px;
-    width: 0px;
-    font-size: 20px;
-}
+
 .scoring-system{
-    /*margin-right: 20px;*/
+    margin-right: 20px;
     background-color: pink;
 }
 #all-post{
@@ -49,5 +63,5 @@ li {
     float: left;
 }
 .moveLeft{
-    /*margin-left: -6px;*/
-}
+    margin-left: -6px;
+}*/

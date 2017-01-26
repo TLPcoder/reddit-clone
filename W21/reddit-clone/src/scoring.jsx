@@ -31,11 +31,12 @@ class Scoring extends Component {
             <div>
                 <ul className = "scoring-system">
                     <li className="arrow moveLeft">
-                        <button onClick={this.handleClickUp}><img src="../images/up.png" alt="" height="30px" width="30px"/></button>
+
+                        <a className="btn-floating btn-medium waves-effect waves-light red" onClick={this.handleClickUp}><i className="material-icons right">thumb_up</i></a>
                     </li>
-                    <li className="likes">{redditData}</li>
+                    <li className="likesScore text">{redditData}</li>
                     <li className="arrow">
-                        <button onClick={this.handleClickDown}><img src="../images/down.png" alt="" height="30px" width="30px"/></button>
+                        <a className="btn-floating btn-medium  waves-effect waves-light red" onClick={this.handleClickDown}><i className="material-icons right">thumb_down</i></a>
                     </li>
                 </ul>
             </div>
